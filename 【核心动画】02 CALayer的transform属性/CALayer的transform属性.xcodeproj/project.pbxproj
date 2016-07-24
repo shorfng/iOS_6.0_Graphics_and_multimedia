@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73767B851D21501D0070FFB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73767B841D21501D0070FFB2 /* main.m */; };
+		73767B881D21501D0070FFB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73767B871D21501D0070FFB2 /* AppDelegate.m */; };
+		73767B8B1D21501D0070FFB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73767B8A1D21501D0070FFB2 /* ViewController.m */; };
+		73767B8E1D21501D0070FFB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73767B8C1D21501D0070FFB2 /* Main.storyboard */; };
+		73767B901D21501D0070FFB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73767B8F1D21501D0070FFB2 /* Assets.xcassets */; };
+		73767B931D21501D0070FFB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73767B911D21501D0070FFB2 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		73767B801D21501D0070FFB2 /* CALayer的transform属性.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CALayer的transform属性.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73767B841D21501D0070FFB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		73767B861D21501D0070FFB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		73767B871D21501D0070FFB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		73767B891D21501D0070FFB2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		73767B8A1D21501D0070FFB2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		73767B8D1D21501D0070FFB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		73767B8F1D21501D0070FFB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73767B921D21501D0070FFB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		73767B941D21501D0070FFB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73767B7D1D21501D0070FFB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73767B771D21501D0070FFB2 = {
+			isa = PBXGroup;
+			children = (
+				73767B821D21501D0070FFB2 /* CALayer的transform属性 */,
+				73767B811D21501D0070FFB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73767B811D21501D0070FFB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73767B801D21501D0070FFB2 /* CALayer的transform属性.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73767B821D21501D0070FFB2 /* CALayer的transform属性 */ = {
+			isa = PBXGroup;
+			children = (
+				73767B861D21501D0070FFB2 /* AppDelegate.h */,
+				73767B871D21501D0070FFB2 /* AppDelegate.m */,
+				73767B891D21501D0070FFB2 /* ViewController.h */,
+				73767B8A1D21501D0070FFB2 /* ViewController.m */,
+				73767B8C1D21501D0070FFB2 /* Main.storyboard */,
+				73767B8F1D21501D0070FFB2 /* Assets.xcassets */,
+				73767B911D21501D0070FFB2 /* LaunchScreen.storyboard */,
+				73767B941D21501D0070FFB2 /* Info.plist */,
+				73767B831D21501D0070FFB2 /* Supporting Files */,
+			);
+			path = "CALayer的transform属性";
+			sourceTree = "<group>";
+		};
+		73767B831D21501D0070FFB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73767B841D21501D0070FFB2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73767B7F1D21501D0070FFB2 /* CALayer的transform属性 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73767B971D21501D0070FFB2 /* Build configuration list for PBXNativeTarget "CALayer的transform属性" */;
+			buildPhases = (
+				73767B7C1D21501D0070FFB2 /* Sources */,
+				73767B7D1D21501D0070FFB2 /* Frameworks */,
+				73767B7E1D21501D0070FFB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CALayer的transform属性";
+			productName = "CALayer的transform属性";
+			productReference = 73767B801D21501D0070FFB2 /* CALayer的transform属性.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73767B781D21501D0070FFB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Loto;
+				TargetAttributes = {
+					73767B7F1D21501D0070FFB2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WW7QRAPE95;
+					};
+				};
+			};
+			buildConfigurationList = 73767B7B1D21501D0070FFB2 /* Build configuration list for PBXProject "CALayer的transform属性" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73767B771D21501D0070FFB2;
+			productRefGroup = 73767B811D21501D0070FFB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73767B7F1D21501D0070FFB2 /* CALayer的transform属性 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73767B7E1D21501D0070FFB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73767B931D21501D0070FFB2 /* LaunchScreen.storyboard in Resources */,
+				73767B901D21501D0070FFB2 /* Assets.xcassets in Resources */,
+				73767B8E1D21501D0070FFB2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73767B7C1D21501D0070FFB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73767B8B1D21501D0070FFB2 /* ViewController.m in Sources */,
+				73767B881D21501D0070FFB2 /* AppDelegate.m in Sources */,
+				73767B851D21501D0070FFB2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		73767B8C1D21501D0070FFB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73767B8D1D21501D0070FFB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		73767B911D21501D0070FFB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73767B921D21501D0070FFB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73767B951D21501D0070FFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		73767B961D21501D0070FFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73767B981D21501D0070FFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CALayer的transform属性/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TD.CALayer-transform--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		73767B991D21501D0070FFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CALayer的transform属性/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TD.CALayer-transform--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73767B7B1D21501D0070FFB2 /* Build configuration list for PBXProject "CALayer的transform属性" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73767B951D21501D0070FFB2 /* Debug */,
+				73767B961D21501D0070FFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73767B971D21501D0070FFB2 /* Build configuration list for PBXNativeTarget "CALayer的transform属性" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73767B981D21501D0070FFB2 /* Debug */,
+				73767B991D21501D0070FFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73767B781D21501D0070FFB2 /* Project object */;
+}
