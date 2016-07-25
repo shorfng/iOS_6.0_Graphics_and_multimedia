@@ -34,14 +34,20 @@
   [self setUpMinuteLayer]; // 添加分针
   [self setUpSecondLayer]; // 添加秒针
 
-  // 添加定时器
-  [NSTimer scheduledTimerWithTimeInterval:1
-                                   target:self
-                                 selector:@selector(timeChange)
-                                 userInfo:nil
-                                  repeats:YES];
+  // 方式1：NSTimer定时器
+//  [NSTimer scheduledTimerWithTimeInterval:1
+//                                   target:self
+//                                 selector:@selector(timeChange)
+//                                 userInfo:nil
+//                                  repeats:YES];
+//
+//  [self timeChange];
 
-  [self timeChange];
+  // 方法2：CADisplayLink（link默认是1/60 秒执行一次）
+  CADisplayLink *link =
+      [CADisplayLink displayLinkWithTarget:self selector:@selector(timeChange)];
+  //执行定时器 把定时器放在主运行循环中执行
+  [link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
 }
 
 // 获取当前的系统的时间
