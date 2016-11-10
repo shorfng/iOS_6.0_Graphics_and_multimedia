@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vitamio iOS SDK 快速入门 - 使用教程 - Vitamio - Android 与 iOS 平台最专业的多媒体开发框架</title>
+<meta name="keywords" content="Vitamio,,iOS,SDK">
+<meta name="description" content="Vitamio是一款全能的多媒体开发框架，可以让你用最简单的步骤开发出一款全能视频播放器，目前支持Android与iOS两大平台！全硬件解码 所有主流Android设备都能享受真正的硬件解码的便利，流畅播放720P甚至1080P高清MKV，FLV，MP4，MOV，TS，RMVB等常见格式的视频。Vitamio独特的硬件渲染引擎，把视频解码与渲染交给最擅长图形处理的GPU来做，极大的缓解CPU的压力，提高应用响应速度！Vitamio还可以在 Android 与 iOS 上跨平台支持 MMS, RTSP, R">
+<script type="text/javascript" src="https://www.vitamio.org/statics/js/cookie.js"></script>
+<script type="text/javascript">
+js_path = 'https://www.vitamio.org/statics/js/';
+</script>
+<link href="https://www.vitamio.org/statics/vitamio/css/style.css" rel="stylesheet" type="text/css">
+<link href="https://www.vitamio.org/statics/vitamio/css/right.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://www.vitamio.org/statics/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.vitamio.org/statics/vitamio/js/jquery.blockUI.js"></script>
+<style>
+body{
+    position: relative;
+    top:-66px;
+}
+    .Advertisement{
+        width:100%;
+        min-width: 1049px;
+        position: relative;
+        left:0px;
+        top:0px;
+    }
+    .Advertisement .adv_img{
+        width:100%;
+    }
+    .top-nav{
+position: relative;
+top:0px;
+    }
+    .anniu{
+        position: absolute;
+        width:100%;
+        bottom:14px;
+        left:0px;
+        text-align: center;
+    }
+    .close_ad{
+        position: absolute;
+        top:40px;
+        cursor: pointer;
+        right:260px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var scrollT = document.documentElement.scrollTop||document.body.scrollTop;
+            if(scrollT >= $(".Advertisement").height()){
+                $(".top-nav").css({"position":"fixed"})
+            }else{
+                 $(".top-nav").css({"position":"relative"})
+            }
+        });
+        $(".close_ad").click(function(){
+            $(".Advertisement").fadeOut();
+            $(".top-nav").css({"position":"relative"});
+            $(window).scroll(function(){
+
+                var scrollT = document.documentElement.scrollTop||document.body.scrollTop;
+                console.log(scrollT);
+                if(scrollT > 0){
+                    $(".top-nav").css({"position":"fixed"})
+                }else{
+                     $(".top-nav").css({"position":"relative"})
+                }
+            });
+        });
+    })
+</script>
+</head>
+<body class="cn">
+<div class="top-nav png">
+	<div class="wp">
+    	<div class="logo"><a href="http://www.vitamio.org" title="Vitamio"><img src="https://www.vitamio.org/statics/vitamio/images/logo.png" width="123" height="36" alt="Vitamio" /></a><a href="http://www.vitamio.org/en/docs/Tutorial/" class="lan" onClick="setcookie('lang','en',30);" title="vitamio International Sites">English</a></div>
+                <ul class="nav yh">
+        	<li><a href="http://www.vitamio.org">首页</a></li>
+                                    <li><a href="http://www.vitamio.org/License/">授权介绍</a></li>
+                                    <li class="on"><a href="http://www.vitamio.org/docs/">帮助文档</a></li>
+                                    <li><a href="http://www.vitamio.org/Download/">下载中心</a></li>
+                                    <li><a href="http://www.vitamio.org/About/">关于我们</a></li>
+                    </ul>
+        		    </div>	
+</div>
+<script src="https://www.vitamio.org/statics/js/SyntaxHighlighter/scripts/shCore.js" type="text/javascript"></script>
+<script src="https://www.vitamio.org/statics/js/SyntaxHighlighter/scripts/shAutoloader.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" media="all" href="https://www.vitamio.org/statics/js/SyntaxHighlighter/styles/shCore.css"></link>
+<link type="text/css" rel="stylesheet" media="all" href="https://www.vitamio.org/statics/js/SyntaxHighlighter/styles/shThemeDefault.css"></link>
+<div class="catbn">
+	<div class="wp catbn-c">
+    	<div class="catinfo">
+            <h2 class="yh">帮助文档</h2>
+            <p>Help documentation</p>
+        </div>
+    </div>
+</div>
+<div class="wp yh" style="margin-bottom:50px">
+	<div class="pageleft">
+    	    	<div class="left-nav">
+			        	<a href="http://www.vitamio.org/docs/news/">产品动态</a>
+                    	<a href="http://www.vitamio.org/docs/Basic/">基本介绍</a>
+                    	<a href="http://www.vitamio.org/docs/API/">API</a>
+                    	<a href="http://www.vitamio.org/docs/FAQ/">FAQ</a>
+                    	<a href="http://www.vitamio.org/docs/Tutorial/" class="cur">使用教程</a>
+                    </div>
+            </div>
+    <div class="pageright">
+    	<div class="page-title"><h1>Vitamio iOS SDK 快速入门</h1></div>
+        <div class="page-content">
+        	************* Vitamio SDK for iOS User Manual **************<br />
+<br />
+&nbsp;&nbsp;&nbsp; Version: 4.2.0<br />
+&nbsp;&nbsp;&nbsp; Release date: 2014-08-05<br />
+<br />
+<strong><span style="font-size:16px;">简介</span></strong><br />
+<br />
+Vitamio SDK for iOS 是炫一下官方推出的 iOS 平台上使用的软件开发工 具包(SDK), 为 iOS 开发者提供简单, 快捷的接口, 帮助开发者实现 iOS 平台上的媒体 播放应用.<br />
+<br />
+Vitamio 完整下载包是 Vitamio-iOS-version.zip(https://github.com/yixia/Vitamio-iOS/archive/master.zip), 解压缩后包含 Demo, Vitamio, Doc 三个部分, 解压后的目录结构如下所示:<br />
+<br />
+<pre class="brush:java;">
+    - Vitamio/ 该目录存放 Vitamio SDK 的头文件和静态库(.a)文件.
+    - Doc/ 该目录存放用户手册和类参考文档.
+    - Demo/ 该目录主要存放1个iOS示例工程, 用于帮助开发都快速了解如何使用SDK.</pre>
+<br />
+<br />
+<strong><span style="font-size:16px;">阅读对象</span></strong><br />
+<br />
+本文档面向所有使用该SDK的开发人员, 测试人员等, 要求读者具有一定的iOS编程开发经验.<br />
+<strong><span style="font-size:14px;">Vitamio SDK 功能说明</span></strong><br />
+<ul>
+<li>&nbsp;&nbsp;&nbsp; 本地全媒体格式支持, 并对主流的媒体格式(mp4, avi, wmv, flv, mkv, mov, rmvb 等 )进行优化;</li>
+<li>&nbsp;&nbsp;&nbsp; 支持广泛的流式视频格式, HLS, RTMP, HTTP Rseudo-Streaming 等;</li>
+<li>&nbsp;&nbsp;&nbsp; 性能强大, 资源CPU/内存占用率低, 充分利用 iPhone/iPod Touch/iPad 视频硬解能力;</li>
+<li>&nbsp;&nbsp;&nbsp; API 简单易用, 可扩展, 高度灵活.</li>
+</ul>
+<br />
+<strong><span style="font-size:14px;">Vitamio SDK 快速入门</span></strong><br />
+<br />
+详细代码参见 Vitamio-Demo(https://github.com/yixia/Vitamio-iOS/tree/master/Demo) .<br />
+运行环境<br />
+<br />
+Vitamio SDK for iOS 可运行于 iPhone/iPod Touch/iPad, 支持 iOS 4.3 及以上版本; 支持 armv7/armv7s/i386(模拟器).<br />
+<br />
+<strong><span style="font-size:14px;">新建工程</span></strong><br />
+<br />
+在 Xcode 中新建一个新的 iOS 工程.<br />
+<br />
+<strong>配置Target链接参数</strong><br />
+<br />
+选择 Build Settings | Linking | Other Linker Flags, 将该选项的 Debug/Release 键都配置为 -ObjC .<br />
+<span style="font-size:14px;">添加依赖</span><br />
+<br />
+Vitamio SDK 依赖的系统框架和系统库如下:<br />
+<br />
+&nbsp;&nbsp;&nbsp;
+<pre class="brush:java;">
+    - AVFoundation.framwork     音视频播放基本工具
+    - AudioToolbox.framwork     音频控制API
+    - CoreGraphics.framwork     轻量级2D渲染API
+    - CoreMedia.framwork        音视频低级API
+    - CoreVideo.framwork        视频低级API
+    - Foundation.framwork       基本工具
+    - MediaPlayer.framwork      系统播放器接口
+    - OpenGLES.framwork         3D图形渲染API
+    - QuartzCore.framwork       视频渲染输出需要
+    - UIKit.framwork            界面API
+    - libbz2.dylib              压缩工具
+    - libz.dylib                压缩工具
+    - libstdc++.dylib           C++标准库
+    - libiconv.dylib            字符编码转换工具
+</pre>
+<br />
+配置 target, 在 Xcode Build Phases | Link Binary With Libraries 中添加以上所列 框架和库.<br />
+<br />
+<strong><span style="font-size:14px;">导入 Vitamio SDK</span></strong><br />
+<br />
+把 Vitamio SDK 的头文件文件夹(include)和静态库 lib*.a 拖入 Xcode 工程中.<br />
+<br />
+&nbsp;
+<pre class="brush:java;">
+    - Vitamio/
+    - include/          该文件夹下存放所需头文件
+    - lib*.a            Vitamio 所需的各个静态库</pre>
+<br />
+<br />
+<strong><span style="font-size:14px;">调用 API</span></strong><br />
+<br />
+<strong><span style="font-size:14px;">获取播放地址</span></strong><br />
+<br />
+&nbsp;&nbsp;&nbsp; 对于已导入到应用文档目录的媒体文件, 可以用如下方法获取其路径:<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<pre class="brush:java;">
+ NSString *docDir = [NSString stringWithFormat:@&quot;%@/Documents&quot;, NSHomeDirectory()];
+ NSString *videoUrl = [NSString stringWithFormat:@&quot;%@/%@&quot;, docDir, @&quot;demo.mkv&quot;];</pre>
+<br />
+<br />
+&nbsp;&nbsp;&nbsp; 对于网络视频流地址, 可直接获取, 如:<br />
+<br />
+<pre class="brush:java;">
+ NSString *videoUrl = @&quot;http://meta.video.qiyi.com/242/de25dc2b5d385a8e27304d1e6dcd1a35.m3u8&quot;</pre>
+<br />
+<br />
+<span style="font-size:14px;"><strong>播放器的简单使用流程</strong></span><br />
+<br />
+&nbsp;&nbsp;&nbsp; 在您将要使用的Controller中声明使用 VMediaPlayerDelegate 协议<br />
+<br />
+<vmediaplayerdelegate><br />
+<br />
+&nbsp;&nbsp;&nbsp; 使用类 VMediaPlayer 的类方法 +sharedInstance 获取播放器共享实例, 然后调用实例 方法 -setupPlayerWithCarrierView:withDelegate: 来注册使用播放器.<br />
+<br />
+&nbsp;
+<pre class="brush:java;">
+mMPayer = [VMediaPlayer sharedInstance];
+[mMPayer setupPlayerWithCarrierView:self.view withDelegate:self];</pre>
+<br />
+<br />
+&nbsp;&nbsp;&nbsp; 给播放器传入要播放的视频URL, 并告知其进行播放准备<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<pre class="brush:java;">
+ self.videoURL = [NSURL URLWithString:videoUrl];
+ [mMPayer setDataSource:self.videoURL header:nil];
+ [mMPayer prepareAsync];
+</pre>
+<br />
+&nbsp;&nbsp;&nbsp; 实现 VMediaPlayerDelegate 协议, 以获得&#39;播放器准备完成&#39;等通知<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<pre class="brush:java;">
+        // 当&#39;播放器准备完成&#39;时, 该协议方法被调用, 我们可以在此调用 [player start]
+        // 来开始音视频的播放.
+        - (void)mediaPlayer:(VMediaPlayer *)player didPrepared:(id)arg
+        {
+            [player start];
+        }
+        // 当&#39;该音视频播放完毕&#39;时, 该协议方法被调用, 我们可以在此作一些播放器善后
+        // 操作, 如: 重置播放器, 准备播放下一个音视频等
+        - (void)mediaPlayer:(VMediaPlayer *)player playbackComplete:(id)arg
+        {
+            [player reset];
+        }
+        // 如果播放由于某某原因发生了错误, 导致无法正常播放, 该协议方法被调用, 参
+        // 数 arg 包含了错误原因.
+        - (void)mediaPlayer:(VMediaPlayer *)player error:(id)arg
+        {
+            NSLog(@&quot;NAL 1RRE &amp;&amp;&amp;&amp; VMediaPlayer Error: %@&quot;, arg);
+        }</pre>
+<br />
+<br />
+&nbsp;&nbsp;&nbsp; 当不再使用播放器时, 可以调用 -unSetupPlayer 实例方法来取消注册播放器.<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [mMPayer unSetupPlayer];<br />
+<br />
+至此, Vitamio SDK 的快速入门就结束了, 更详细的代码及注释见 Vitamio-Demo 工程, 其它 API 及协议的使用方法详见 &quot;Vitamio SDK for iOS 参考文档（http://yixia.github.io/Vitamio-iOS/）&quot;.</vmediaplayerdelegate>        </div>
+	</div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$("a.tracing").each(function(i){
+		var id = $(this).attr('id')
+		$(this).attr('href','#'+id);
+	});
+})
+</script>
+
+<script src="https://www.vitamio.org/statics/js/SyntaxHighlighter/load_syntaxhighlighter.js" type="text/javascript"></script>
+<script language="JavaScript" src="https://www.vitamio.org/api.php?op=count&id=30&modelid=1"></script>
+<div class="footer yh">
+	<div class="wp">
+        <div class="ft-logo"></div>
+        <div class="ft-cat">
+            <div class="cat-box cat-1">
+                <div class="title">概括</div>
+                                <ul>
+                                    <li><a href="http://www.vitamio.org/docs/Basic/2013/0514/16.html" target="_blank" style="" >Vitamio产品大全</a></li>
+                                    <li><a href="http://www.vitamio.org/docs/Basic/2013/0508/14.html" target="_blank" style="" >Vitamio测试网络视频</a></li>
+                                    <li><a href="http://www.vitamio.org/docs/Basic/2013/0508/13.html" target="_blank" style="" >Vitamio不支持特性列表</a></li>
+                                    <li><a href="http://www.vitamio.org/docs/Basic/2013/0508/8.html" target="_blank" style="" >Vitamio 新手入门</a></li>
+                                    <li><a href="http://www.vitamio.org/docs/Basic/2013/0505/4.html" target="_blank" style="" >Vitamio 错误大全</a></li>
+                                    <li><a href="http://www.vitamio.org/docs/Basic/2013/0429/3.html" target="_blank" style="" >Vitamio 是什么？</a></li>
+                                </ul>
+                            </div>
+            <div class="cat-box cat-2">
+                <div class="title">下载</div>
+                <ul>
+                    <li><a href="http://www.vitamio.org/Download/">Vitamio 3.0</a></li>
+                    <li><a href="https://github.com/yixia/VitamioDemo" target="_blank">VitamioDemo</a></li>
+                    <li><a href="http://www.weishipin.com/MicroVideo-development.apk
+" target="_blank">官方实例微视频</a></li>
+                </ul>
+            </div>
+<!--
+            <div class="cat-box cat-1">
+                <div class="title">商业授权</div>
+                <ul>
+                    <li><a href="http://www.vitamio.org/License/">标准版</a></li>
+                    <li><a href="http://www.vitamio.org/License/">至尊版</a></li>
+                    <li><a href="/index.php?m=formguide&c=index&a=show&formid=12&siteid=1">合作方式</a></li>
+                </ul>
+            </div>
+-->
+            <div class="cat-box cat-1">
+                <div class="title">论坛</div>
+                <ul>
+                                    </ul>
+            </div>
+            <div class="cat-box cat-1">
+                <div class="title">关于我们</div>
+                <ul>	
+                	<li><a href="http://www.vitamio.org/About/#introduction">公司简介</a></li>
+                    <li><a href="http://www.vitamio.org/About/#team">团队介绍</a></li>
+                    <li><a href="http://www.vitamio.org/docs/news/">产品动态</a></li>
+                    <li><a href="http://www.vitamio.org/About/#contact">联系方式</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wp yh ft-text tr">© 2011-2013 Xuan Yi Xia Inc. All rights reserved</div>
+<!--[if IE 6]>
+<script type="text/javascript" src="https://www.vitamio.org/statics/js/png.js"></script>
+<script>
+  DD_belatedPNG.fix('.png');
+</script>
+<![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46856735-1', 'vitamio.org');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

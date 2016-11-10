@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_Vitamio框架播放视频" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgH-7P-he7">
+                                <color key="backgroundColor" red="1" green="0.4388735701" blue="0.21729926599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mBE-dK-unJ">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dHn-o5-uYc">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SO5-Wb-rkK">
+                                                <state key="normal" title="播放本地视频"/>
+                                                <connections>
+                                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XXA-88-Qml"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoK-Hf-VZh">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="Vk3-tc-uNv"/>
+                                                </constraints>
+                                                <state key="normal" title="播放网络视频"/>
+                                                <connections>
+                                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JGY-HV-ffE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1pc-tx-is6"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9M-gv-hIW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SFN-85-GM0"/>
+                                    <constraint firstAttribute="width" constant="62" id="weM-pc-bLJ"/>
+                                </constraints>
+                                <state key="normal" title="继续播放"/>
+                                <connections>
+                                    <action selector="resumPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ds1-GO-N6C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bD-Xc-S1j">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="ivL-Ld-5zx"/>
+                                    <constraint firstAttribute="height" constant="30" id="sKv-T6-a9E"/>
+                                </constraints>
+                                <state key="normal" title="暂停"/>
+                                <connections>
+                                    <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="06d-fN-F8z"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cAq-Pb-thW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="A2e-c6-fwf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="valueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="XeN-bA-80P"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srv-eE-SED">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Wgi-B3-nFc"/>
+                                    <constraint firstAttribute="width" constant="31" id="XZt-oi-vwR"/>
+                                </constraints>
+                                <state key="normal" title="停止"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c55-9p-wVe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JgH-7P-he7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="69" id="6R1-Oi-lvw"/>
+                            <constraint firstItem="G9M-gv-hIW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="159" id="7NC-WN-7j8"/>
+                            <constraint firstItem="srv-eE-SED" firstAttribute="top" secondItem="mBE-dK-unJ" secondAttribute="bottom" constant="21" id="7oC-s7-k1t"/>
+                            <constraint firstAttribute="trailing" secondItem="JgH-7P-he7" secondAttribute="trailing" constant="30" id="9p6-BZ-gQN"/>
+                            <constraint firstAttribute="trailing" secondItem="cAq-Pb-thW" secondAttribute="trailing" constant="106" id="ArP-Ue-gO4"/>
+                            <constraint firstAttribute="trailing" secondItem="mBE-dK-unJ" secondAttribute="trailing" constant="60" id="Deg-7t-sgg"/>
+                            <constraint firstItem="JgH-7P-he7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="EbZ-oT-xt7"/>
+                            <constraint firstItem="cAq-Pb-thW" firstAttribute="top" secondItem="G9M-gv-hIW" secondAttribute="bottom" constant="31" id="Eda-wu-hWt"/>
+                            <constraint firstItem="cAq-Pb-thW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="107" id="EuJ-Xl-qnp"/>
+                            <constraint firstItem="cAq-Pb-thW" firstAttribute="top" secondItem="G9M-gv-hIW" secondAttribute="bottom" constant="31" id="FPX-Fk-ZCc"/>
+                            <constraint firstItem="G9M-gv-hIW" firstAttribute="top" secondItem="mBE-dK-unJ" secondAttribute="bottom" constant="89" id="GiQ-AF-PbZ"/>
+                            <constraint firstItem="srv-eE-SED" firstAttribute="top" secondItem="mBE-dK-unJ" secondAttribute="bottom" constant="21" id="Pfj-7D-fCg"/>
+                            <constraint firstItem="2bD-Xc-S1j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="85" id="Tdo-gr-hwA"/>
+                            <constraint firstItem="mBE-dK-unJ" firstAttribute="top" secondItem="JgH-7P-he7" secondAttribute="bottom" constant="50" id="d4R-Bu-fJh"/>
+                            <constraint firstItem="2bD-Xc-S1j" firstAttribute="top" secondItem="mBE-dK-unJ" secondAttribute="bottom" constant="21" id="fER-RJ-533"/>
+                            <constraint firstItem="mBE-dK-unJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="313" id="ggl-2E-ggu"/>
+                            <constraint firstItem="srv-eE-SED" firstAttribute="trailing" secondItem="cAq-Pb-thW" secondAttribute="trailing" id="kaf-eP-mjl"/>
+                            <constraint firstItem="mBE-dK-unJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="oLH-me-xZW"/>
+                            <constraint firstItem="cAq-Pb-thW" firstAttribute="top" secondItem="2bD-Xc-S1j" secondAttribute="bottom" constant="99" id="oZk-bj-Hzh"/>
+                            <constraint firstItem="cAq-Pb-thW" firstAttribute="top" secondItem="srv-eE-SED" secondAttribute="bottom" constant="99" id="oc2-zZ-RKU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoPlayerView" destination="JgH-7P-he7" id="h3R-Yc-Hh5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="108.39580209895054"/>
+        </scene>
+    </scenes>
+</document>
