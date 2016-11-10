@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7343569E1DD30731004789EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343569D1DD30731004789EC /* main.m */; };
+		734356A11DD30731004789EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 734356A01DD30731004789EC /* AppDelegate.m */; };
+		734356A41DD30731004789EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 734356A31DD30731004789EC /* ViewController.m */; };
+		734356A71DD30731004789EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734356A51DD30731004789EC /* Main.storyboard */; };
+		734356A91DD30731004789EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734356A81DD30731004789EC /* Assets.xcassets */; };
+		734356AC1DD30731004789EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734356AA1DD30731004789EC /* LaunchScreen.storyboard */; };
+		734356B41DD30745004789EC /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 734356B31DD30745004789EC /* 1.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		734356991DD30731004789EC /* OC-AVPlayer播放视频.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OC-AVPlayer播放视频.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7343569D1DD30731004789EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7343569F1DD30731004789EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		734356A01DD30731004789EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		734356A21DD30731004789EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		734356A31DD30731004789EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		734356A61DD30731004789EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		734356A81DD30731004789EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		734356AB1DD30731004789EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		734356AD1DD30731004789EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		734356B31DD30745004789EC /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		734356961DD30731004789EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		734356901DD30730004789EC = {
+			isa = PBXGroup;
+			children = (
+				7343569B1DD30731004789EC /* OC-AVPlayer播放视频 */,
+				7343569A1DD30731004789EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7343569A1DD30731004789EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				734356991DD30731004789EC /* OC-AVPlayer播放视频.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7343569B1DD30731004789EC /* OC-AVPlayer播放视频 */ = {
+			isa = PBXGroup;
+			children = (
+				7343569F1DD30731004789EC /* AppDelegate.h */,
+				734356A01DD30731004789EC /* AppDelegate.m */,
+				734356A21DD30731004789EC /* ViewController.h */,
+				734356A31DD30731004789EC /* ViewController.m */,
+				734356A51DD30731004789EC /* Main.storyboard */,
+				734356A81DD30731004789EC /* Assets.xcassets */,
+				734356B31DD30745004789EC /* 1.mp4 */,
+				734356AA1DD30731004789EC /* LaunchScreen.storyboard */,
+				734356AD1DD30731004789EC /* Info.plist */,
+				7343569C1DD30731004789EC /* Supporting Files */,
+			);
+			path = "OC-AVPlayer播放视频";
+			sourceTree = "<group>";
+		};
+		7343569C1DD30731004789EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7343569D1DD30731004789EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		734356981DD30731004789EC /* OC-AVPlayer播放视频 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 734356B01DD30731004789EC /* Build configuration list for PBXNativeTarget "OC-AVPlayer播放视频" */;
+			buildPhases = (
+				734356951DD30731004789EC /* Sources */,
+				734356961DD30731004789EC /* Frameworks */,
+				734356971DD30731004789EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OC-AVPlayer播放视频";
+			productName = "OC-AVPlayer播放视频";
+			productReference = 734356991DD30731004789EC /* OC-AVPlayer播放视频.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		734356911DD30730004789EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "蓝田";
+				TargetAttributes = {
+					734356981DD30731004789EC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 734356941DD30730004789EC /* Build configuration list for PBXProject "OC-AVPlayer播放视频" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 734356901DD30730004789EC;
+			productRefGroup = 7343569A1DD30731004789EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				734356981DD30731004789EC /* OC-AVPlayer播放视频 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		734356971DD30731004789EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734356AC1DD30731004789EC /* LaunchScreen.storyboard in Resources */,
+				734356B41DD30745004789EC /* 1.mp4 in Resources */,
+				734356A91DD30731004789EC /* Assets.xcassets in Resources */,
+				734356A71DD30731004789EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		734356951DD30731004789EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734356A41DD30731004789EC /* ViewController.m in Sources */,
+				734356A11DD30731004789EC /* AppDelegate.m in Sources */,
+				7343569E1DD30731004789EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		734356A51DD30731004789EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				734356A61DD30731004789EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		734356AA1DD30731004789EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				734356AB1DD30731004789EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		734356AE1DD30731004789EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		734356AF1DD30731004789EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		734356B11DD30731004789EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "OC-AVPlayer播放视频/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Loto.com.OC-AVPlayer----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		734356B21DD30731004789EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "OC-AVPlayer播放视频/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Loto.com.OC-AVPlayer----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		734356941DD30730004789EC /* Build configuration list for PBXProject "OC-AVPlayer播放视频" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				734356AE1DD30731004789EC /* Debug */,
+				734356AF1DD30731004789EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		734356B01DD30731004789EC /* Build configuration list for PBXNativeTarget "OC-AVPlayer播放视频" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				734356B11DD30731004789EC /* Debug */,
+				734356B21DD30731004789EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 734356911DD30730004789EC /* Project object */;
+}
